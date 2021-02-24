@@ -5,7 +5,7 @@
 
 [View demonstration video on Youtube](https://www.youtube.com/watch?v=vLsxrd7yj-U)
 
-- Tested with Godot v3.2.3.stable.official.
+- Tested with Godot v3.2.4-rc2.
 - Textures used in demo are from https://cc0textures.com/.
 - When you get near a texture block you will see id of texture which you can see on cc0textures by replacing id in `https://cc0textures.com/view?id=[Plaster002]`
 
@@ -14,4 +14,4 @@
  - [Linux](https://drive.google.com/file/d/1Z6F-bytZMHf94nXcFVyDFJ1GQuCa18CZ/view?usp=sharing)
  - [Windows](https://drive.google.com/file/d/1WkxbuigbtiDN2ttngAnxFK6mD5fDmE4L/view?usp=sharing)
  - [MacOS](https://drive.google.com/file/d/1YNn9xwByGihy8nkrXBXLNhbnlW378qu-/view?usp=sharing)
- 
+
