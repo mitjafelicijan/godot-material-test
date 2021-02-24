@@ -1,7 +1,7 @@
 # Testing of Materials in Godot 3D environment
 
 
-![](https://i9.ytimg.com/vi_webp/vLsxrd7yj-U/mqdefault.webp?time=1614139800000&sqp=CJij14EG&rs=AOn4CLC_SL99BRq_ZO1Z6ZUjlM56Kt0jnw)
+![Screenshot](https://user-images.githubusercontent.com/296714/108954662-6f8daa00-766d-11eb-80c6-02d48707f358.png)
 
 [View demonstration video on Youtube](https://www.youtube.com/watch?v=vLsxrd7yj-U)
 
