@@ -9,3 +9,9 @@
 - Textures used in demo are from https://cc0textures.com/.
 - When you get near a texture block you will see id of texture which you can see on cc0textures by replacing id in `https://cc0textures.com/view?id=[Plaster002]`
 
+
+**Download prebuild binaries:**
+ - [Windows](https://drive.google.com/uc?export=download&confirm=1lHg&id=1WkxbuigbtiDN2ttngAnxFK6mD5fDmE4L)
+ - [Linux](https://drive.google.com/uc?export=download&confirm=cLIH&id=1Z6F-bytZMHf94nXcFVyDFJ1GQuCa18CZ)
+ - [MacOS](https://drive.google.com/uc?export=download&confirm=K_xp&id=1YNn9xwByGihy8nkrXBXLNhbnlW378qu-)
+ 
