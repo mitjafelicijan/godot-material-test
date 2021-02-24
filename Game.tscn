@@ -98,10 +98,7 @@ __meta__ = {
 }
 
 [node name="DebugPanel" parent="." instance=ExtResource( 2 )]
-margin_left = -3.0
-margin_top = -2.0
-margin_right = -3.0
-margin_bottom = -2.0
+visible = false
 
 [node name="Sandbox" parent="." instance=ExtResource( 3 )]
 
