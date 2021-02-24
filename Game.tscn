@@ -1,12 +1,101 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://UI/DebugPanel/DebugPanel.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Levels/Sandbox.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Fonts/GothamBold_24.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Fonts/GothamBold_16.tres" type="DynamicFont" id=6]
+
+[sub_resource type="Animation" id=1]
+resource_name = "FadeToNormal"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4.6, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Title:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 4.2, 4.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Textures:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 4.2, 4.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
 
 [node name="Game" type="Spatial"]
 script = ExtResource( 1 )
+
+[node name="IntroScreen" type="CanvasLayer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="IntroScreen"]
+autoplay = "FadeToNormal"
+anims/FadeToNormal = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="IntroScreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="IntroScreen"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -164.0
+margin_top = -46.0
+margin_right = 164.0
+margin_bottom = -18.0
+custom_fonts/font = ExtResource( 5 )
+text = "Godot Materials Demo"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Textures" type="Label" parent="IntroScreen"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -164.0
+margin_top = 46.0
+margin_right = 164.0
+margin_bottom = 74.0
+custom_fonts/font = ExtResource( 6 )
+text = "PBR Materials from cc0textures.com"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="DebugPanel" parent="." instance=ExtResource( 2 )]
 margin_left = -3.0

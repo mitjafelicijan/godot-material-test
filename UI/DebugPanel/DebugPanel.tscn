@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://UI/DebugPanel/DebugPanel.gd" type="Script" id=1]
-[ext_resource path="res://Fonts/GothamBold_12.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Fonts/GothamBold_10_outline.tres" type="DynamicFont" id=3]
 
 [node name="DebugPanel" type="Control"]
 anchor_right = 1.0
@@ -28,34 +28,42 @@ margin_bottom = 690.0
 
 [node name="FPS" type="Label" parent="MarginContainer/VBoxContainer"]
 margin_right = 1250.0
-margin_bottom = 15.0
-custom_fonts/font = ExtResource( 2 )
+margin_bottom = 12.0
+custom_fonts/font = ExtResource( 3 )
 uppercase = true
 
 [node name="ObjectsRendered" type="Label" parent="MarginContainer/VBoxContainer"]
-margin_top = 19.0
+margin_top = 16.0
 margin_right = 1250.0
-margin_bottom = 34.0
-custom_fonts/font = ExtResource( 2 )
+margin_bottom = 28.0
+custom_fonts/font = ExtResource( 3 )
 uppercase = true
 
 [node name="VerticesRendered" type="Label" parent="MarginContainer/VBoxContainer"]
-margin_top = 38.0
+margin_top = 32.0
 margin_right = 1250.0
-margin_bottom = 53.0
-custom_fonts/font = ExtResource( 2 )
+margin_bottom = 44.0
+custom_fonts/font = ExtResource( 3 )
 uppercase = true
 
 [node name="DrawCalls" type="Label" parent="MarginContainer/VBoxContainer"]
-margin_top = 57.0
+margin_top = 48.0
 margin_right = 1250.0
-margin_bottom = 72.0
-custom_fonts/font = ExtResource( 2 )
+margin_bottom = 60.0
+custom_fonts/font = ExtResource( 3 )
 uppercase = true
 
 [node name="VideoMemUsed" type="Label" parent="MarginContainer/VBoxContainer"]
-margin_top = 76.0
+margin_top = 64.0
 margin_right = 1250.0
-margin_bottom = 91.0
-custom_fonts/font = ExtResource( 2 )
+margin_bottom = 76.0
+custom_fonts/font = ExtResource( 3 )
+uppercase = true
+
+[node name="Quit" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 80.0
+margin_right = 1250.0
+margin_bottom = 92.0
+custom_fonts/font = ExtResource( 3 )
+text = "Press 'X' to quit"
 uppercase = true
