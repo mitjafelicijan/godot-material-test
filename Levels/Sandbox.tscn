@@ -24,16 +24,16 @@
 [ext_resource path="res://Materials/Sponge001.material" type="Material" id=22]
 [ext_resource path="res://Materials/Tiles032.material" type="Material" id=23]
 
-[sub_resource type="CubeMesh" id=2]
+[sub_resource type="CubeMesh" id=1]
 size = Vector3( 0.5, 3, 2 )
 
-[sub_resource type="ConcavePolygonShape" id=3]
+[sub_resource type="ConcavePolygonShape" id=2]
 data = PoolVector3Array( -0.1, 1.5, 1, 0.1, 1.5, 1, -0.1, -1.5, 1, 0.1, 1.5, 1, 0.1, -1.5, 1, -0.1, -1.5, 1, 0.1, 1.5, -1, -0.1, 1.5, -1, 0.1, -1.5, -1, -0.1, 1.5, -1, -0.1, -1.5, -1, 0.1, -1.5, -1, 0.1, 1.5, 1, 0.1, 1.5, -1, 0.1, -1.5, 1, 0.1, 1.5, -1, 0.1, -1.5, -1, 0.1, -1.5, 1, -0.1, 1.5, -1, -0.1, 1.5, 1, -0.1, -1.5, -1, -0.1, 1.5, 1, -0.1, -1.5, 1, -0.1, -1.5, -1, 0.1, 1.5, 1, -0.1, 1.5, 1, 0.1, 1.5, -1, -0.1, 1.5, 1, -0.1, 1.5, -1, 0.1, 1.5, -1, -0.1, -1.5, 1, 0.1, -1.5, 1, -0.1, -1.5, -1, 0.1, -1.5, 1, 0.1, -1.5, -1, -0.1, -1.5, -1 )
 
-[sub_resource type="BoxShape" id=4]
+[sub_resource type="BoxShape" id=3]
 extents = Vector3( 1, 6, 15 )
 
-[sub_resource type="SpatialMaterial" id=1]
+[sub_resource type="SpatialMaterial" id=4]
 albedo_color = Color( 0, 0, 0, 1 )
 
 [node name="Sandbox" type="Spatial"]
@@ -45,7 +45,7 @@ transform = Transform( -4.17057e-08, -0.299441, 0.954115, -1.3089e-08, 0.954115,
 
 [node name="AcousticFoam003" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2, -10.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 1 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/AcousticFoam003" groups=[
@@ -54,11 +54,11 @@ material/0 = ExtResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/AcousticFoam003/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Metal030" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2, -10.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 10 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Metal030" groups=[
@@ -67,11 +67,11 @@ material/0 = ExtResource( 10 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Metal030/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Planks020" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2, -10.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 16 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Planks020" groups=[
@@ -80,11 +80,11 @@ material/0 = ExtResource( 16 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Planks020/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Rock035" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2, -7.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 17 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Rock035" groups=[
@@ -93,11 +93,11 @@ material/0 = ExtResource( 17 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Rock035/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Tiles074" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2, -4.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 18 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Tiles074" groups=[
@@ -106,11 +106,11 @@ material/0 = ExtResource( 18 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Tiles074/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Tiles075" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2, -1.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 19 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Tiles075" groups=[
@@ -119,11 +119,11 @@ material/0 = ExtResource( 19 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Tiles075/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Tiles078" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2, 1.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 20 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Tiles078" groups=[
@@ -132,11 +132,11 @@ material/0 = ExtResource( 20 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Tiles078/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Wood027" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2, 4.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 21 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Wood027" groups=[
@@ -145,11 +145,11 @@ material/0 = ExtResource( 21 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Wood027/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Sponge001" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2, 7.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 22 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Sponge001" groups=[
@@ -158,11 +158,11 @@ material/0 = ExtResource( 22 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Sponge001/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Tiles032" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2, 10.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 23 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Tiles032" groups=[
@@ -171,11 +171,11 @@ material/0 = ExtResource( 23 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Tiles032/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Metal032" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2, -7.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 11 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Metal032" groups=[
@@ -184,11 +184,11 @@ material/0 = ExtResource( 11 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Metal032/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Metal034" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2, -4.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 12 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Metal034" groups=[
@@ -197,11 +197,11 @@ material/0 = ExtResource( 12 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Metal034/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Metal035" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2, -1.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 13 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Metal035" groups=[
@@ -210,11 +210,11 @@ material/0 = ExtResource( 13 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Metal035/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Metal036" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2, 1.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 2 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Metal036" groups=[
@@ -223,11 +223,11 @@ material/0 = ExtResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Metal036/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="MetalPlates006" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2, 4.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 7 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/MetalPlates006" groups=[
@@ -236,11 +236,11 @@ material/0 = ExtResource( 7 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/MetalPlates006/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Moss002" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2, 7.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 14 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Moss002" groups=[
@@ -249,11 +249,11 @@ material/0 = ExtResource( 14 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Moss002/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="PavingStones098" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 2, 10.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 15 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/PavingStones098" groups=[
@@ -262,11 +262,11 @@ material/0 = ExtResource( 15 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/PavingStones098/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Leather031" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2, -7.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 8 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Leather031" groups=[
@@ -275,11 +275,11 @@ material/0 = ExtResource( 8 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Leather031/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Concrete034" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2, -4.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 3 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Concrete034" groups=[
@@ -288,11 +288,11 @@ material/0 = ExtResource( 3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Concrete034/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Fabric048" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2, -1.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 4 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Fabric048" groups=[
@@ -301,11 +301,11 @@ material/0 = ExtResource( 4 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Fabric048/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Fabric049" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2, 1.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 5 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Fabric049" groups=[
@@ -314,11 +314,11 @@ material/0 = ExtResource( 5 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Fabric049/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Ground041" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2, 4.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 6 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Ground041" groups=[
@@ -327,11 +327,11 @@ material/0 = ExtResource( 6 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Ground041/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Marble006" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2, 7.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 9 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Marble006" groups=[
@@ -340,11 +340,11 @@ material/0 = ExtResource( 9 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Marble006/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Leather032" type="MeshInstance" parent="MaterialBlocks"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 2, 10.5 )
-mesh = SubResource( 2 )
+mesh = SubResource( 1 )
 material/0 = ExtResource( 8 )
 
 [node name="StaticBody" type="StaticBody" parent="MaterialBlocks/Leather032" groups=[
@@ -353,29 +353,29 @@ material/0 = ExtResource( 8 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MaterialBlocks/Leather032/StaticBody"]
 transform = Transform( 3, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="CollitionsAroundMap" type="StaticBody" parent="."]
 
 [node name="CollisionShape2" type="CollisionShape" parent="CollitionsAroundMap"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 6, 0 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape3" type="CollisionShape" parent="CollitionsAroundMap"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 6, 0 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape4" type="CollisionShape" parent="CollitionsAroundMap"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 6, 0 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape5" type="CollisionShape" parent="CollitionsAroundMap"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.38419e-07, 6, -16 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape6" type="CollisionShape" parent="CollitionsAroundMap"]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.38419e-07, 6, 16 )
-shape = SubResource( 4 )
+shape = SubResource( 3 )
 
 [node name="Floor" type="CSGCombiner" parent="."]
 use_collision = true
@@ -384,4 +384,4 @@ use_collision = true
 width = 30.0
 height = 0.1
 depth = 30.0
-material = SubResource( 1 )
+material = SubResource( 4 )
