@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Material Test"
+config/name="Godot Material Test"
 config/description="Test of cc0 textures"
 run/main_scene="res://Game.tscn"
 config/icon="res://Resources/icon.png"
