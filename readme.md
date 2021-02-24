@@ -11,7 +11,7 @@
 
 
 **Download prebuild binaries:**
- - [Windows](https://drive.google.com/uc?export=download&confirm=1lHg&id=1WkxbuigbtiDN2ttngAnxFK6mD5fDmE4L)
- - [Linux](https://drive.google.com/uc?export=download&confirm=cLIH&id=1Z6F-bytZMHf94nXcFVyDFJ1GQuCa18CZ)
- - [MacOS](https://drive.google.com/uc?export=download&confirm=K_xp&id=1YNn9xwByGihy8nkrXBXLNhbnlW378qu-)
+ - [Linux](https://drive.google.com/file/d/1Z6F-bytZMHf94nXcFVyDFJ1GQuCa18CZ/view?usp=sharing)
+ - [Windows](https://drive.google.com/file/d/1WkxbuigbtiDN2ttngAnxFK6mD5fDmE4L/view?usp=sharing)
+ - [MacOS](https://drive.google.com/file/d/1YNn9xwByGihy8nkrXBXLNhbnlW378qu-/view?usp=sharing)
  
